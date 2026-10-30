@@ -71,7 +71,7 @@ jobs:
         run: esphome compile dimpsy.yaml
       - name: Run scenarios
         if: steps.token.outputs.present == 'true'
-        uses: wokwi/wokwi-ci-action@11ddc3fe66a14fcd46683fb21ae5c77657ad4606 # v1.2.0
+        uses: wokwi/wokwi-ci-action@09e807a07e05b6f2498e43e3fb7ffcf38c277af7 # v1.3.0
         with:
           path: firmware/esphome
           timeout: 60000
