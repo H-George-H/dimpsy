@@ -8,13 +8,19 @@ on:
   push:
     branches: [main]
     paths:
-      - "firmware/esphome/**"
-      - "firmware/core/**"
+      - "firmware/esphome/dimpsy.yaml"
+      - "firmware/esphome/diagram.json"
+      - "firmware/esphome/wokwi.toml"
+      - "firmware/esphome/requirements.txt"
+      - "firmware/esphome/scenarios/**"
       - ".github/workflows/wokwi.yml"
   pull_request:
     paths:
-      - "firmware/esphome/**"
-      - "firmware/core/**"
+      - "firmware/esphome/dimpsy.yaml"
+      - "firmware/esphome/diagram.json"
+      - "firmware/esphome/wokwi.toml"
+      - "firmware/esphome/requirements.txt"
+      - "firmware/esphome/scenarios/**"
       - ".github/workflows/wokwi.yml"
   workflow_dispatch:
 
