@@ -32,9 +32,15 @@ ota:
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
+  # Where there is no Wi-Fi (for example in the attic), the lamp starts its own
+  # network after ap_timeout. Join "Dimpsy Fallback" and open 192.168.4.1.
   ap:
     ssid: Dimpsy Fallback
     password: !secret ap_password
+    ap_timeout: 30s
+
+# Opens the settings page automatically when a phone joins the fallback network.
+captive_portal:
 
 web_server:
   port: 80
