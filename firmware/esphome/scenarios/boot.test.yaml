@@ -7,5 +7,7 @@
 name: Boots without Wi-Fi
 version: 1
 steps:
+  # ESPHome logs the end of setup() before it prints its version banner, and
+  # wait-serial only matches output after the previous step.
+  - wait-serial: "setup() finished successfully"
   - wait-serial: "ESPHome version"
-  - wait-serial: "setup()"
