@@ -67,8 +67,61 @@ time:
         - ds1307.write_time:
             id: rtc_time
 
+# Reachable as http://dimpsy.local, so there is no need to look up the IP address.
+mdns:
+
+# The settings page, plus ESPHome's REST API and live log stream (on by default).
+# Examples, with each entity's id from the page:
+#   curl -X POST http://dimpsy.local/light/built-in_led/turn_on
+#   curl http://dimpsy.local/sensor/wi-fi_signal
+#   curl -N http://dimpsy.local/events   (live log and state stream)
 web_server:
   port: 80
+  log: true
+
+# Diagnostics, shown on the settings page and available over the REST API.
+debug:
+  update_interval: 30s
+
+sensor:
+  - platform: wifi_signal
+    name: "Wi-Fi Signal"
+    update_interval: 30s
+    entity_category: diagnostic
+  - platform: uptime
+    name: "Uptime"
+    entity_category: diagnostic
+  - platform: debug
+    free:
+      name: "Free Heap"
+    block:
+      name: "Largest Free Heap Block"
+    loop_time:
+      name: "Loop Time"
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "IP Address"
+    ssid:
+      name: "Wi-Fi Network"
+    mac_address:
+      name: "MAC Address"
+  - platform: debug
+    reset_reason:
+      name: "Reset Reason"
+  - platform: template
+    name: "Clock"
+    entity_category: diagnostic
+    update_interval: 30s
+    lambda: |-
+      return id(rtc_time).now().strftime("%Y-%m-%d %H:%M:%S");
+  - platform: template
+    name: "Clock Source"
+    entity_category: diagnostic
+    update_interval: 30s
+    lambda: |-
+      return id(sntp_time).has_time() ? std::string("Synced") : std::string("Not synced");
 
 # The board's built-in LED, for bare-board testing. Many ESP32 DevKitC boards
 # have it on GPIO2; on boards without one, wire an LED and resistor to GPIO2.
