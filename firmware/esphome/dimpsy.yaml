@@ -121,7 +121,7 @@ text_sensor:
     entity_category: diagnostic
     update_interval: 30s
     lambda: |-
-      return id(sntp_time).has_time() ? std::string("Synced") : std::string("Not synced");
+      return id(sntp_time).now().is_valid() ? std::string("Synced") : std::string("Not synced");
 
 # The board's built-in LED, for bare-board testing. Many ESP32 DevKitC boards
 # have it on GPIO2; on boards without one, wire an LED and resistor to GPIO2.
