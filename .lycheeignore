@@ -7,6 +7,6 @@
 # The website is only live once GitHub Pages is enabled and main has deployed.
 ^https://h-george-h\.github\.io/dimpsy
 
-# Retailers that return 403 Forbidden to automated clients.
+# Distributor sites that return 403 to automated requests.
 ^https://uk\.farnell\.com/
 ^https://uk\.rs-online\.com/

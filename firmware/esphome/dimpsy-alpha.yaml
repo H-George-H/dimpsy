@@ -27,7 +27,7 @@ esphome:
     priority: 600
     then:
       - ds1307.read_time:
-          id: rtc
+          id: rtc_time
 
 i2c:
   sda: GPIO21
@@ -37,8 +37,8 @@ time:
   # The DS3231 keeps the time when the network or power is lost. ESPHome's
   # ds1307 component reads the DS3231, which uses the same clock registers
   # (issue #42). With no clock fitted, the network time below is used.
-  - platform: ds1307
-    id: rtc
+  # The base package already defines rtc_time, so extend it.
+  - id: !extend rtc_time
     timezone: Europe/London
     on_time:
       # Once a minute, start the sunrise if the alarm is armed and the wake
@@ -50,9 +50,9 @@ time:
                 and:
                   - binary_sensor.is_on: alarm_switch
                   - lambda: |-
-                      auto now = id(rtc).now();
+                      auto now = id(rtc_time).now();
                       if (!now.is_valid()) {
-                        now = id(net_time).now();
+                        now = id(sntp_time).now();
                       }
                       if (!now.is_valid()) {
                         return false;
@@ -66,13 +66,6 @@ time:
                     id: sunrise
                     ramp_s: !lambda "return (int) id(sunrise_minutes).state * 60;"
                     hold_s: 3600
-  - platform: sntp
-    id: net_time
-    timezone: Europe/London
-    on_time_sync:
-      then:
-        - ds1307.write_time:
-            id: rtc
 
 light:
   - platform: esp32_rmt_led_strip
