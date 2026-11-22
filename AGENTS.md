@@ -31,6 +31,7 @@ For changes to `docs/`, `mkdocs.yml` or the website, also run `mkdocs build --st
 
 * Dimpsy is USB-C powered only. Never add or suggest anything that connects to mains voltage.
 * Every new file needs an SPDX copyright and licence header matching its folder (`reuse annotate`). Files that cannot hold comments are covered by `REUSE.toml`.
+* The default copyright holder for new files is George Hunt (`reuse annotate --copyright "George Hunt"`). Leave existing headers as they are unless asked.
 * Licences follow [decision 0002](docs/decisions/0002-licensing.md): MIT by default. An ESPHome custom component that includes ESPHome headers must be GPL-3.0-or-later.
 * Do not copy code or files from Led’o’clock. Record any other third-party material in [THIRD_PARTY.md](THIRD_PARTY.md) and keep its notices intact.
 * The board in `firmware/esphome/dimpsy.yaml` follows [decision 0007](docs/decisions/0007-microcontroller-board.md) for the first prototype only. The board for the finished lamp is not decided.
