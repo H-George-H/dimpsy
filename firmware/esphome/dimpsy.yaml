@@ -14,6 +14,12 @@
 
 esphome:
   name: dimpsy
+  # Read the RTC at start-up, so the time is right before Wi-Fi connects.
+  on_boot:
+    priority: -100
+    then:
+      - ds1307.read_time:
+          id: rtc_time
 
 esp32:
   board: esp32dev
@@ -41,6 +47,25 @@ wifi:
 
 # Opens the settings page automatically when a phone joins the fallback network.
 captive_portal:
+
+# DS3231 real-time clock on the default I2C pins (decision 0007). ESPHome's
+# ds1307 platform also drives the DS3231. The RTC keeps the time with no network;
+# network time corrects it whenever Wi-Fi is connected.
+i2c:
+  sda: 21
+  scl: 22
+
+time:
+  - platform: ds1307
+    id: rtc_time
+    update_interval: never
+  - platform: sntp
+    id: sntp_time
+    timezone: Europe/London
+    on_time_sync:
+      then:
+        - ds1307.write_time:
+            id: rtc_time
 
 web_server:
   port: 80
