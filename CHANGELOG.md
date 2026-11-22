@@ -38,6 +38,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 * Working-together and large-file guidance in `CONTRIBUTING.md`.
 * Hardware organisation guidance in `docs/hardware-practices.md` and a prototype bill of materials template in `hardware/bom.csv`.
 * `AGENTS.md` with guidance for AI coding agents.
+* Built-in LED on GPIO2 as a light in the firmware, switchable from the web page.
 * Sanitiser builds of the firmware core under GCC and Clang in CI.
 * Weekly scheduled checks: a firmware build with the latest ESPHome and a full link check.
 * ESPHome pinned in `firmware/esphome/requirements.txt`, with Dependabot upgrades.
@@ -71,6 +72,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 * BOM records the ESP32 DevKitC as held and adds a level shifter for the SK6812 strip.
 * Decision 0006 (still open) now sets out the lighting aims from published research and the supply-voltage trade-offs, and adds tunable-white COB, SK6812 WWA and discrete power LED options.
 * Website, repository and badge links now point to the `H-George-H` GitHub account, including the GitHub Pages address `h-george-h.github.io/dimpsy`.
+
+* Wi-Fi is back on at boot, and the fallback access point “Dimpsy Fallback” uses ESPHome’s default timeout of 90 seconds instead of 30.
 
 ### Removed
 
