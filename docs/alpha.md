@@ -53,27 +53,27 @@ As a rough guide, 30 LEDs on the white channel give a few hundred lumens. That i
 
 ## Parts
 
-Prices are from The Pi Hut on 9 October 2026 and Farnell on 10 October 2026, including VAT. Stock is patchy, so each line gives an alternative. Parts marked “held” are already owned or come in the Elegoo Mega starter kit.
+Prices for parts already ordered are what was paid, including VAT. Prices for the rest are from The Pi Hut on 9 October 2026 and Farnell on 10 October 2026, including VAT. Stock is patchy, so each line gives an alternative. Parts marked “held” are already owned or come in the Elegoo Mega starter kit. Parts bought in packs show the price per part, with the pack in the notes.
 
 | Ref | Part | Qty | Where to buy | About | Notes |
 | --- | --- | --- | --- | --- | --- |
 | A1 | ESP32 DevKitC | 1 | Held | | From decision 0007 |
-| D1 | SK6812 RGBW LED strip, 5 V, 60 LEDs/m, 1 m | 1 | [The Pi Hut 104549](https://thepihut.com/products/flexible-rgbw-led-strip-neopixel-ws2812-sk6812-compatible-60-led-metre) | £14.40 | The listing does not give the white colour temperature. For a known warm white, search Amazon for an SK6812 “RGBWW” or “warm white” 5 V 60 LEDs/m strip (BTF-LIGHTING sell one). Cut to 30 LEDs |
-| U1 | 74AHCT125 or 74HCT125 level shifter, 14-pin DIP | 1 | [The Pi Hut ADA1787](https://thepihut.com/products/74ahct125-quad-level-shifter-3v-to-5v) or [RS 709-2205](https://uk.rs-online.com/web/p/line-interface-ics/7092205) (SN74HCT125N) | £1–2 | Lifts the ESP32’s 3.3 V data signal to the 5 V the strip expects |
+| D1 | SK6812 RGBW LED strip, 5 V, 60 LEDs/m, 1 m | 1 | [The Pi Hut 104549](https://thepihut.com/products/flexible-rgbw-led-strip-neopixel-ws2812-sk6812-compatible-60-led-metre) | £14.40 | Ordered (1 m, white). The listing does not give the white colour temperature. For a known warm white, search Amazon for an SK6812 “RGBWW” or “warm white” 5 V 60 LEDs/m strip (BTF-LIGHTING sell one). Cut to 30 LEDs |
+| U1 | SN74AHCT125N level shifter, 14-pin DIP, with socket | 1 | Held (Amazon, Briny River) | £2.06 | Lifts the ESP32’s 3.3 V data signal to the 5 V the strip expects. Bought as a 5-set pack for £10.29, so four are spare. [The Pi Hut ADA1787](https://thepihut.com/products/74ahct125-quad-level-shifter-3v-to-5v) or [RS 709-2205](https://uk.rs-online.com/web/p/line-interface-ics/7092205) are alternatives |
 | PS1 | Raspberry Pi 15 W USB-C power supply, UK plug | 1 | [The Pi Hut SC0443](https://thepihut.com/products/raspberry-pi-psu-uk) | £7.70 | 5.1 V, 3 A |
-| J1 | USB-C breakout, downstream, with 5.1 kΩ CC resistors | 1 | [The Pi Hut ADA4090](https://thepihut.com/products/adafruit-usb-c-breakout-board-downstream-connection-ada4090) or [Pimoroni](https://shop.pimoroni.com/products/adafruit-usb-c-breakout-board-downstream-connection) | £2.90 | Sold out at The Pi Hut when checked. The [sunken version](https://thepihut.com/products/adafruit-sunken-usb-type-c-breakout-board-downstream-connection) also works. See the note below on cheap adapters |
-| F1 | Inline blade fuse holder and 3 A blade fuse | 1 | Amazon, Halfords or RS | £3–5 | On the 5 V wire, next to J1 |
-| W1 | Wago 221 lever connectors, 3- or 5-way | 2 | Amazon, Screwfix or Toolstation | £5 (pack) | The 5 V and ground rails |
+| J1 | USB-C breakout, horizontal | 1 | Ordered (The Pi Hut) | not recorded | Ordered as “USB-C Breakout - Horizontal”. The order email gave no price or part number. Check that it has the 5.1 kΩ CC resistors. See the note below on cheap adapters |
+| F1 | Inline blade fuse holder, 12 V, 16 AWG, and a 3 A blade fuse | 1 | Held (Amazon, Zosoo and GuiSaLa) | £2.05 and £3.99 | On the 5 V wire, next to J1. The holder came in a 2-pack for £4.09, and its listing says 10 A, so fit a 3 A fuse. The fuse came from a 50-piece assortment for £3.99 |
+| W1 | Wago 221-413 lever connectors, 3-way | 2 | Held (Amazon, Tool Basement) | £0.53 | The 5 V and ground rails. Bought as a pack of 10 for £5.34 |
 | C1 | 1000 µF electrolytic capacitor, 10 V or higher | 1 | RS, The Pi Hut or Amazon | £1 | Across the strip’s power wires, to absorb the surge at switch-on. Mind the polarity |
 | R1 | 330 Ω resistor | 1 | Held (Elegoo kit) | | In the strip’s data wire |
-| S1 | Rotary encoder with push switch, Bourns PEC11R-4215F-S0024 | 1 | [Farnell 2474844](https://uk.farnell.com/bourns/pec11r-4215f-s0024/incremental-encoder-2ch-24pulse/dp/2474844), or a KY-040 encoder module from Amazon | £2.06 | 24 clicks per turn, one step per click. 6 mm D-shaft, so it needs a knob to match. Its mounting lugs do not fit a breadboard, so solder wires to its pins. A KY-040 module also works, powered from 3.3 V |
-| S2 | 30 mm arcade button | 1 | [The Pi Hut 104438](https://thepihut.com/products/arcade-button-30mm-translucent-clear) | £2.50 | Snooze |
-| S3 | Miniature toggle switch, on-off | 1 | The Pi Hut, Amazon or RS | £1–2 | Alarm on or off |
-| U2 | DS3231 real-time clock (a clock chip with its own battery) | 1 | [The Pi Hut ADA5188](https://thepihut.com/products/adafruit-ds3231-precision-rtc-stemma-qt) or [Pimoroni](https://shop.pimoroni.com/products/adafruit-ds3231-precision-rtc-stemma-qt) | £13.40 | Needs a CR1220 coin cell (£1.90). See the note below on cheap modules |
+| S1 | KY-040 rotary encoder module with knob | 1 | Held (Amazon, GIAKGJ) | £1.80 | Bought as a 5-pack for £8.99. Power it from 3.3 V. These modules usually click fewer times per turn than the Bourns PEC11R-4215F-S0024 ([Farnell 2474844](https://uk.farnell.com/bourns/pec11r-4215f-s0024/incremental-encoder-2ch-24pulse/dp/2474844), £2.06, 24 clicks per turn), so check the step count in the firmware |
+| S2 | 30 mm arcade button | 1 | [The Pi Hut 104438](https://thepihut.com/products/arcade-button-30mm-translucent-clear) | £2.50 | Snooze. Ordered |
+| S3 | Miniature toggle switch, SPST on-off, latching | 1 | Ordered (The Pi Hut) | £1.50 | Alarm on or off |
+| U2 | DS3231 real-time clock (a clock chip with its own battery) | 1 | [The Pi Hut ADA5188](https://thepihut.com/products/adafruit-ds3231-precision-rtc-stemma-qt) or [Pimoroni](https://shop.pimoroni.com/products/adafruit-ds3231-precision-rtc-stemma-qt) | £13.40 | Ordered. Needs a CR1220 coin cell (£1.90). See the note below on cheap modules |
 | M1 | Aluminium tube, about 25 mm across and 150 mm long | 1 | B&Q, Wickes or Amazon | £3–5 | The LED core. Sheds heat from the strip |
 | L1 | IKEA Fado lamp | 1 | IKEA | | Bulb holder and mains flex removed (see [safety](safety.md)) |
 | | Breadboard, jumper wires, card or foam-board box | | Held (Elegoo kit) | | |
-| | Hook-up wire, 20 AWG or thicker, red and black | 1 m each | Amazon, RS or The Pi Hut | £3 | For the strip power. Thinner wire is fine for signals |
+| W2 | 20 AWG silicone hook-up wire kit, 6 colours, 3 m each | 1 | Held (Amazon, Fermerry-UK) | £11.29 | For the strip power. Thinner wire is fine for signals |
 
 The new parts come to roughly £60 to £70. The same parts are listed in [`hardware/bom.csv`](../hardware/bom.csv) under the build name `alpha`.
 
