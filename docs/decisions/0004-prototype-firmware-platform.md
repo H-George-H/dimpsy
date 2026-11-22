@@ -38,12 +38,12 @@ The design principles also call for the lamp to work without a network, and the 
 
 ESPHome runs on its own, with no Home Assistant. Nothing stops an owner linking the lamp to a smart home system later, but the lamp works offline by default and the link is optional (see [Works without a network](../design-principles.md#works-without-a-network)).
 
-The design principles still require the lamp to work fully without a network. Offline behaviour and tactile-first control must be checked on the prototype ([issue #44](https://github.com/Joe-Heffer/dimpsy/issues/44)). If ESPHome cannot meet them, a new decision record will supersede this one.
+The design principles still require the lamp to work fully without a network. Offline behaviour and tactile-first control must be checked on the prototype ([issue #44](https://github.com/H-George-H/dimpsy/issues/44)). If ESPHome cannot meet them, a new decision record will supersede this one.
 
-Two further conditions from issue [#5](https://github.com/Joe-Heffer/dimpsy/issues/5) are tracked separately:
+Two further conditions from issue [#5](https://github.com/H-George-H/dimpsy/issues/5) are tracked separately:
 
-* ESPHome support for the DS3231 RTC, high-resolution LEDC PWM and the SK6812 RGBW strip is unconfirmed ([issue #42](https://github.com/Joe-Heffer/dimpsy/issues/42)).
-* Temporal dithering must be off ([issue #43](https://github.com/Joe-Heffer/dimpsy/issues/43)).
+* ESPHome support for the DS3231 RTC, high-resolution LEDC PWM and the SK6812 RGBW strip is unconfirmed ([issue #42](https://github.com/H-George-H/dimpsy/issues/42)).
+* Temporal dithering must be off ([issue #43](https://github.com/H-George-H/dimpsy/issues/43)).
 
 ## Consequences
 

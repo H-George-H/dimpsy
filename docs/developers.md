@@ -10,11 +10,11 @@ Tools for working on Dimpsy without the hardware in front of you: simulators, lo
 
 ## Simulation with Wokwi
 
-[Wokwi](https://wokwi.com) simulates the ESP32 and its controls. The folder [`firmware/esphome/`](https://github.com/Joe-Heffer/dimpsy/tree/main/firmware/esphome) is a Wokwi project:
+[Wokwi](https://wokwi.com) simulates the ESP32 and its controls. The folder [`firmware/esphome/`](https://github.com/H-George-H/dimpsy/tree/main/firmware/esphome) is a Wokwi project:
 
-* [`diagram.json`](https://github.com/Joe-Heffer/dimpsy/blob/main/firmware/esphome/diagram.json) wires an ESP32 DevKitC to two rotary encoders, a slide potentiometer, a toggle switch, a button and a DS1307 clock, using the pins in [decision 0007](decisions/0007-microcontroller-board.md).
-* [`wokwi.toml`](https://github.com/Joe-Heffer/dimpsy/blob/main/firmware/esphome/wokwi.toml) points Wokwi at the firmware that ESPHome builds.
-* [`scenarios/`](https://github.com/Joe-Heffer/dimpsy/tree/main/firmware/esphome/scenarios) holds automated test scenarios. The first checks that the firmware boots with no Wi-Fi network.
+* [`diagram.json`](https://github.com/H-George-H/dimpsy/blob/main/firmware/esphome/diagram.json) wires an ESP32 DevKitC to two rotary encoders, a slide potentiometer, a toggle switch, a button and a DS1307 clock, using the pins in [decision 0007](decisions/0007-microcontroller-board.md).
+* [`wokwi.toml`](https://github.com/H-George-H/dimpsy/blob/main/firmware/esphome/wokwi.toml) points Wokwi at the firmware that ESPHome builds.
+* [`scenarios/`](https://github.com/H-George-H/dimpsy/tree/main/firmware/esphome/scenarios) holds automated test scenarios. The first checks that the firmware boots with no Wi-Fi network.
 
 The diagram has no SK6812 strip or TSL2591 light sensor, so the lamp output is not simulated. Use the [curve explorer](tools/curves.md) for that.
 
@@ -33,11 +33,11 @@ The diagram has no SK6812 strip or TSL2591 light sensor, so the lamp output is n
 
 ### In CI
 
-The [Wokwi simulation workflow](https://github.com/Joe-Heffer/dimpsy/actions/workflows/wokwi.yml) builds the firmware and runs the scenarios with the [Wokwi CI action](https://github.com/wokwi/wokwi-ci-action). It needs a [Wokwi CI token](https://wokwi.com/dashboard/ci) saved as the repository secret `WOKWI_CLI_TOKEN`. Without it, as on pull requests from forks, the job skips with a notice. Each run uploads the serial log as an artifact.
+The [Wokwi simulation workflow](https://github.com/H-George-H/dimpsy/actions/workflows/wokwi.yml) builds the firmware and runs the scenarios with the [Wokwi CI action](https://github.com/wokwi/wokwi-ci-action). It needs a [Wokwi CI token](https://wokwi.com/dashboard/ci) saved as the repository secret `WOKWI_CLI_TOKEN`. Without it, as on pull requests from forks, the job skips with a notice. Each run uploads the serial log as an artifact.
 
 ## Dawn curve explorer
 
-The [curve explorer](tools/curves.md) runs the firmware’s brightness curves in your browser. Change the curve, range, gamma, dawn length and PWM resolution, then play the dawn on screen. Every run of the [CI workflow](https://github.com/Joe-Heffer/dimpsy/actions/workflows/ci.yml) also charts the default curves in the summary of its “Firmware core tests” job.
+The [curve explorer](tools/curves.md) runs the firmware’s brightness curves in your browser. Change the curve, range, gamma, dawn length and PWM resolution, then play the dawn on screen. Every run of the [CI workflow](https://github.com/H-George-H/dimpsy/actions/workflows/ci.yml) also charts the default curves in the summary of its “Firmware core tests” job.
 
 ## Flash from the browser
 
@@ -94,13 +94,13 @@ CI pins ESPHome in `firmware/esphome/requirements.txt`. Dependabot proposes upgr
 
 | Workflow | What it checks |
 | --- | --- |
-| [CI](https://github.com/Joe-Heffer/dimpsy/actions/workflows/ci.yml) | REUSE compliance, ESPHome validation and build, core unit tests (also under GCC and Clang with AddressSanitizer and UndefinedBehaviorSanitizer) and the browser curve port |
-| [Lint](https://github.com/Joe-Heffer/dimpsy/actions/workflows/lint.yml) | Markdown, EditorConfig, actionlint, links, spelling and zizmor |
-| [Wokwi simulation](https://github.com/Joe-Heffer/dimpsy/actions/workflows/wokwi.yml) | Boots the firmware in the simulator and runs the scenarios |
+| [CI](https://github.com/H-George-H/dimpsy/actions/workflows/ci.yml) | REUSE compliance, ESPHome validation and build, core unit tests (also under GCC and Clang with AddressSanitizer and UndefinedBehaviorSanitizer) and the browser curve port |
+| [Lint](https://github.com/H-George-H/dimpsy/actions/workflows/lint.yml) | Markdown, EditorConfig, actionlint, links, spelling and zizmor |
+| [Wokwi simulation](https://github.com/H-George-H/dimpsy/actions/workflows/wokwi.yml) | Boots the firmware in the simulator and runs the scenarios |
 | Website (`pages.yml`) | Builds this site and publishes it from `main` |
 | Scheduled checks (`scheduled.yml`) | Weekly: builds the firmware with the latest ESPHome release and checks all links |
-| [Pull request title](https://github.com/Joe-Heffer/dimpsy/actions/workflows/pr-title.yml) | Conventional commit titles, which Release Please reads |
-| [Release Please](https://github.com/Joe-Heffer/dimpsy/actions/workflows/release-please.yml) | Opens release pull requests and keeps the changelog |
+| [Pull request title](https://github.com/H-George-H/dimpsy/actions/workflows/pr-title.yml) | Conventional commit titles, which Release Please reads |
+| [Release Please](https://github.com/H-George-H/dimpsy/actions/workflows/release-please.yml) | Opens release pull requests and keeps the changelog |
 
 ## References
 

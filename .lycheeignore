@@ -5,4 +5,4 @@
 # Links for the link checker in the Lint workflow to skip.
 
 # The website is only live once GitHub Pages is enabled and main has deployed.
-^https://joe-heffer\.github\.io/dimpsy
+^https://h-george-h\.github\.io/dimpsy

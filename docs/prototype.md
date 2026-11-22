@@ -30,6 +30,6 @@ The drawing is not to scale. The 60 mm slider (an alternative warmth control) an
 
 * The README states that Dimpsy will be powered by USB-C only. Candidate B needs a 12 V supply, and candidate A is planned with a separate 5 V 4 A adapter. Decide whether these are acceptable for the bench prototype only, or whether candidate B should be dropped or run from USB-C Power Delivery. See [decision 0006](decisions/0006-led-candidate.md).
 * Moving from ESPHome to custom firmware later: see [decision 0004](decisions/0004-prototype-firmware-platform.md).
-* Whether ESPHome supports the DS3231, high-resolution LEDC PWM and the SK6812 strip ([issue #42](https://github.com/Joe-Heffer/dimpsy/issues/42)), and whether the lamp works offline from its controls alone ([issue #44](https://github.com/Joe-Heffer/dimpsy/issues/44)).
+* Whether ESPHome supports the DS3231, high-resolution LEDC PWM and the SK6812 strip ([issue #42](https://github.com/H-George-H/dimpsy/issues/42)), and whether the lamp works offline from its controls alone ([issue #44](https://github.com/H-George-H/dimpsy/issues/44)).
 
 The parts for this prototype are listed in [hardware/prototype-parts.csv](../hardware/prototype-parts.csv).

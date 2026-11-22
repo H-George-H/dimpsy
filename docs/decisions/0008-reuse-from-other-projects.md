@@ -12,7 +12,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 ## Context
 
-[THIRD_PARTY.md](../../THIRD_PARTY.md) listed four sunrise and night light projects that Dimpsy might draw on, with unverified licences ([issue #15](https://github.com/Joe-Heffer/dimpsy/issues/15)). A fifth, HA-Sunrise-Lamp-Alarm, is the closest match to the prototype and was missing.
+[THIRD_PARTY.md](../../THIRD_PARTY.md) listed four sunrise and night light projects that Dimpsy might draw on, with unverified licences ([issue #15](https://github.com/H-George-H/dimpsy/issues/15)). A fifth, HA-Sunrise-Lamp-Alarm, is the closest match to the prototype and was missing.
 
 Each folder has its own licence ([decision 0002](0002-licensing.md)), so a project can be usable in one folder and not in another:
 

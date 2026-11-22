@@ -17,7 +17,7 @@ SPDX-License-Identifier: CC-BY-4.0
 Its defaults are sensory-friendly and suitable for autistic adults, but it is a general-purpose lamp. Every setting is configurable.
 
 [Read the docs](prototype.md){ .md-button .md-button--primary }
-[View on GitHub](https://github.com/Joe-Heffer/dimpsy){ .md-button }
+[View on GitHub](https://github.com/H-George-H/dimpsy){ .md-button }
 
 </div>
 

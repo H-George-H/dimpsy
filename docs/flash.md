@@ -38,7 +38,7 @@ If the install cannot connect, hold the **BOOT** button on the board while the d
 
 ## What the web build leaves out
 
-The binary on this page is the same for everyone, so [`dimpsy-web.yaml`](https://github.com/Joe-Heffer/dimpsy/blob/main/firmware/esphome/dimpsy-web.yaml) removes the private settings from [`dimpsy.yaml`](https://github.com/Joe-Heffer/dimpsy/blob/main/firmware/esphome/dimpsy.yaml):
+The binary on this page is the same for everyone, so [`dimpsy-web.yaml`](https://github.com/H-George-H/dimpsy/blob/main/firmware/esphome/dimpsy-web.yaml) removes the private settings from [`dimpsy.yaml`](https://github.com/H-George-H/dimpsy/blob/main/firmware/esphome/dimpsy.yaml):
 
 * No Wi-Fi network or password is built in. You set them at install time.
 * The fallback access point “Dimpsy Fallback” has no password. It only starts when the lamp cannot join a network.
@@ -48,4 +48,4 @@ The lamp works without a network, so none of this affects its local behaviour (s
 
 ## Where the firmware comes from
 
-The [website workflow](https://github.com/Joe-Heffer/dimpsy/actions/workflows/pages.yml) builds `dimpsy-web.yaml` with ESPHome every time `main` changes and publishes the result with a [manifest](https://github.com/Joe-Heffer/dimpsy/blob/main/docs/firmware/manifest.json) that tells ESP Web Tools what to write. The binary is GPL-3.0, because it contains the ESPHome runtime; Dimpsy’s own source is MIT (see [licensing](licensing.md)). ESP Web Tools is Apache-2.0 and loads from [unpkg](https://unpkg.com) when you open this page.
+The [website workflow](https://github.com/H-George-H/dimpsy/actions/workflows/pages.yml) builds `dimpsy-web.yaml` with ESPHome every time `main` changes and publishes the result with a [manifest](https://github.com/H-George-H/dimpsy/blob/main/docs/firmware/manifest.json) that tells ESP Web Tools what to write. The binary is GPL-3.0, because it contains the ESPHome runtime; Dimpsy’s own source is MIT (see [licensing](licensing.md)). ESP Web Tools is Apache-2.0 and loads from [unpkg](https://unpkg.com) when you open this page.

@@ -9,7 +9,7 @@ SPDX-License-Identifier: CC-BY-4.0
 * **Status:** Accepted
 * **Date:** 2026-10-09
 * **Deciders:** Joe Heffer and collaborator
-* **Issue:** [#13](https://github.com/Joe-Heffer/dimpsy/issues/13)
+* **Issue:** [#13](https://github.com/H-George-H/dimpsy/issues/13)
 
 ## Context
 

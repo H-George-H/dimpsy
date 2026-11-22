@@ -14,7 +14,7 @@ import posixpath
 import re
 from pathlib import Path
 
-GITHUB = "https://github.com/Joe-Heffer/dimpsy"
+GITHUB = "https://github.com/H-George-H/dimpsy"
 BRANCH = "main"
 
 # Inline Markdown links and images: ](target) or ](target "title").

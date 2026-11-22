@@ -9,7 +9,7 @@ SPDX-License-Identifier: CC-BY-4.0
 * **Status:** Accepted
 * **Date:** 2026-10-09
 * **Deciders:** Joe Heffer and collaborator
-* **Issue:** [#6](https://github.com/Joe-Heffer/dimpsy/issues/6)
+* **Issue:** [#6](https://github.com/H-George-H/dimpsy/issues/6)
 
 ## Context
 
@@ -50,7 +50,7 @@ Code portability between boards was not treated as a factor. Firmware can be ada
 
 * It meets the pin and PWM requirements with spare capacity (see the provisional pin map below).
 * It shares 3.3 V logic, ADC behaviour, strapping-pin rules and the LEDC and RMT peripherals with any ESP32-family final board, so electrical problems show up on `proto-1` rather than later.
-* It keeps ESPHome and WLED available for [decision 0004](0004-prototype-firmware-platform.md) (issue [#5](https://github.com/Joe-Heffer/dimpsy/issues/5)). The Mega would rule both out.
+* It keeps ESPHome and WLED available for [decision 0004](0004-prototype-firmware-platform.md) (issue [#5](https://github.com/H-George-H/dimpsy/issues/5)). The Mega would rule both out.
 * It allows NTP time, settings from a phone and firmware updates without opening the lamp. The design principles still require the lamp to work fully without a network, so wireless features stay optional.
 
 The Mega 2560 stays available as a bench rig for trying the feel and layout of the physical controls. It is not part of `proto-1`.

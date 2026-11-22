@@ -36,4 +36,4 @@ Build an **alpha** before `proto-1`, as set out in [Alpha build](../alpha.md).
 * `firmware/esphome/dimpsy-alpha.yaml` adds the strip, controls, clock and sunrise to `dimpsy.yaml`.
 * `hardware/bom.csv` lists the alpha parts under the build name `alpha`.
 * Most alpha parts (charger, breakout, fuse, controls, clock and core tube) are reused in `proto-1`.
-* Results from the smoke test plan feed decision 0006 and issues [#42](https://github.com/Joe-Heffer/dimpsy/issues/42) and [#44](https://github.com/Joe-Heffer/dimpsy/issues/44).
+* Results from the smoke test plan feed decision 0006 and issues [#42](https://github.com/H-George-H/dimpsy/issues/42) and [#44](https://github.com/H-George-H/dimpsy/issues/44).
