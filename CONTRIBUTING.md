@@ -58,7 +58,7 @@ The project follows the [REUSE specification](https://reuse.software). Every new
 
 ## Website
 
-The website at <https://joe-heffer.github.io/dimpsy/> is built from the Markdown in `docs/` with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). The navigation is in `mkdocs.yml`. Pages such as the firmware guide and this file are included from elsewhere in the repository, so edit the original, not the copy in `docs/`.
+The website at <https://h-george-h.github.io/dimpsy/> is built from the Markdown in `docs/` with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). The navigation is in `mkdocs.yml`. Pages such as the firmware guide and this file are included from elsewhere in the repository, so edit the original, not the copy in `docs/`.
 
 * Preview it with `pip install -r requirements-docs.txt` and `mkdocs serve`.
 * Check it with `mkdocs build --strict`. CI runs the same check and publishes the site from `main`.

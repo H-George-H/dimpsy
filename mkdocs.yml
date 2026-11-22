@@ -11,9 +11,9 @@
 site_name: Dimpsy
 site_description: An open source bedside sleep light with a gentle sunrise alarm and dawn and dusk modes.
 site_author: Joe Heffer
-site_url: https://joe-heffer.github.io/dimpsy/
-repo_url: https://github.com/Joe-Heffer/dimpsy
-repo_name: Joe-Heffer/dimpsy
+site_url: https://h-george-h.github.io/dimpsy/
+repo_url: https://github.com/H-George-H/dimpsy
+repo_name: H-George-H/dimpsy
 edit_uri: edit/main/docs/
 copyright: Text CC-BY-4.0, code MIT, hardware CERN-OHL-P-2.0
 

@@ -6,7 +6,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Docs folder
 
-This folder holds the project documentation and the source of the website at <https://joe-heffer.github.io/dimpsy/>. `mkdocs.yml` in the repository root builds it with Material for MkDocs, and the page order comes from its `nav` section. This file is for people browsing the repository and is left out of the website.
+This folder holds the project documentation and the source of the website at <https://h-george-h.github.io/dimpsy/>. `mkdocs.yml` in the repository root builds it with Material for MkDocs, and the page order comes from its `nav` section. This file is for people browsing the repository and is left out of the website.
 
 ## Pages
 

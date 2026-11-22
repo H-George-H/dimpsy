@@ -6,7 +6,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Dawn curve explorer
 
-The lamp’s dimmer and its dawn and dusk ramps map a position (a dial setting, or the fraction of a ramp’s duration) to light output through a perceptual brightness curve. Issue [#16](https://github.com/Joe-Heffer/dimpsy/issues/16) lists three candidates. This page runs the same curve code as the firmware, so you can compare them before any LEDs are wired.
+The lamp’s dimmer and its dawn and dusk ramps map a position (a dial setting, or the fraction of a ramp’s duration) to light output through a perceptual brightness curve. Issue [#16](https://github.com/H-George-H/dimpsy/issues/16) lists three candidates. This page runs the same curve code as the firmware, so you can compare them before any LEDs are wired.
 
 <div id="curve-explorer" class="ce" markdown="0">
   <div class="ce-controls">
@@ -57,8 +57,8 @@ The lamp’s dimmer and its dawn and dusk ramps map a position (a dial setting, 
 
 * **The plot** shows relative light output over the dawn. Turn on the log scale to see the first few minutes, where the curves differ most and where the eye is most sensitive.
 * **The preview disc** shows the selected curve on your screen. Screens cannot go as dark as an LED, so treat it as a rough guide only.
-* **The table** counts the distinct PWM duty values the output passes through in the first one and three minutes, updating every 100 ms. Few values means visible steps at low brightness (see issue [#8](https://github.com/Joe-Heffer/dimpsy/issues/8)).
+* **The table** counts the distinct PWM duty values the output passes through in the first one and three minutes, updating every 100 ms. Few values means visible steps at low brightness (see issue [#8](https://github.com/H-George-H/dimpsy/issues/8)).
 
 ## Where the code comes from
 
-`brightness.js` is a direct port of [`firmware/core/brightness.h`](https://github.com/Joe-Heffer/dimpsy/blob/main/firmware/core/brightness.h). CI runs `firmware/core/test/curves_parity.js` to check that both give the same values, so the explorer cannot drift from the firmware. The same CI job adds charts of the default curves to its job summary.
+`brightness.js` is a direct port of [`firmware/core/brightness.h`](https://github.com/H-George-H/dimpsy/blob/main/firmware/core/brightness.h). CI runs `firmware/core/test/curves_parity.js` to check that both give the same values, so the explorer cannot drift from the firmware. The same CI job adds charts of the default curves to its job summary.

@@ -13,10 +13,10 @@ SPDX-License-Identifier: CC-BY-4.0
   </picture>
 </p>
 
-[![CI](https://github.com/joe-heffer/dimpsy/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/joe-heffer/dimpsy/actions/workflows/ci.yml)
-[![Lint](https://github.com/joe-heffer/dimpsy/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/joe-heffer/dimpsy/actions/workflows/lint.yml)
-[![Website](https://github.com/joe-heffer/dimpsy/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/joe-heffer/dimpsy/actions/workflows/pages.yml)
-[![Wokwi simulation](https://github.com/joe-heffer/dimpsy/actions/workflows/wokwi.yml/badge.svg?branch=main)](https://github.com/joe-heffer/dimpsy/actions/workflows/wokwi.yml)
+[![CI](https://github.com/H-George-H/dimpsy/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/H-George-H/dimpsy/actions/workflows/ci.yml)
+[![Lint](https://github.com/H-George-H/dimpsy/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/H-George-H/dimpsy/actions/workflows/lint.yml)
+[![Website](https://github.com/H-George-H/dimpsy/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/H-George-H/dimpsy/actions/workflows/pages.yml)
+[![Wokwi simulation](https://github.com/H-George-H/dimpsy/actions/workflows/wokwi.yml/badge.svg?branch=main)](https://github.com/H-George-H/dimpsy/actions/workflows/wokwi.yml)
 
 Dimpsy is an open source bedside sleep light with a gentle sunrise alarm and dawn and dusk modes to support sleep hygiene.
 
@@ -24,7 +24,7 @@ Its defaults are sensory-friendly and suitable for autistic adults, but it is a 
 
 **Status: early prototype.** Nothing here is ready to build yet.
 
-Website and documentation: <https://joe-heffer.github.io/dimpsy/>
+Website and documentation: <https://h-george-h.github.io/dimpsy/>
 
 ## Safety
 

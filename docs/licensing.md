@@ -6,7 +6,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Licensing
 
-Each folder has its own licence, chosen in [decision 0002](decisions/0002-licensing.md). The project follows the [REUSE specification](https://reuse.software), so every file states its copyright and licence, either in a header or in [`REUSE.toml`](https://github.com/Joe-Heffer/dimpsy/blob/main/REUSE.toml).
+Each folder has its own licence, chosen in [decision 0002](decisions/0002-licensing.md). The project follows the [REUSE specification](https://reuse.software), so every file states its copyright and licence, either in a header or in [`REUSE.toml`](https://github.com/H-George-H/dimpsy/blob/main/REUSE.toml).
 
 | Part | Folder | Licence |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ Firmware binaries built with ESPHome, including the one on the [flashing page](f
 
 ## Citing Dimpsy
 
-If you use or build on Dimpsy, please cite it using [`CITATION.cff`](https://github.com/Joe-Heffer/dimpsy/blob/main/CITATION.cff). GitHub shows a “Cite this repository” button for it.
+If you use or build on Dimpsy, please cite it using [`CITATION.cff`](https://github.com/H-George-H/dimpsy/blob/main/CITATION.cff). GitHub shows a “Cite this repository” button for it.
 
 {%
   include-markdown "../THIRD_PARTY.md"

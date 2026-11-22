@@ -13,7 +13,7 @@ abstract: >-
 authors:
   - family-names: Heffer
     given-names: Joe
-repository-code: "https://github.com/Joe-Heffer/dimpsy"
+repository-code: "https://github.com/H-George-H/dimpsy"
 license:
   - MIT
   - CERN-OHL-P-2.0

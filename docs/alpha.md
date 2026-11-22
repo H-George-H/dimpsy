@@ -25,7 +25,7 @@ It tests:
 It does not settle:
 
 * the LED choice in [decision 0006](decisions/0006-led-candidate.md). The alpha uses an SK6812 RGBW strip, which is candidate A. Its 256 steps per channel will show visible steps at the start of a sunrise, so it says little about light quality.
-* the brightness curve ([#16](https://github.com/Joe-Heffer/dimpsy/issues/16)) or flicker-free dimming at low levels ([#8](https://github.com/Joe-Heffer/dimpsy/issues/8)). The optional add-on below starts on these.
+* the brightness curve ([#16](https://github.com/H-George-H/dimpsy/issues/16)) or flicker-free dimming at low levels ([#8](https://github.com/H-George-H/dimpsy/issues/8)). The optional add-on below starts on these.
 * light levels at the pillow. The TSL2591 logger is left out. A phone light meter app gives a rough reading in the meantime.
 
 ## Layout
@@ -85,7 +85,7 @@ The new parts come to roughly £60 to £70. The same parts are listed in [`hardw
 
 ### Optional add-on: smooth dimming test
 
-To start on the dimming questions in [#8](https://github.com/Joe-Heffer/dimpsy/issues/8) and [decision 0006](decisions/0006-led-candidate.md) candidate C, add a second, plain warm white light source driven by high-resolution PWM. PWM (pulse-width modulation) dims an LED by switching it on and off thousands of times a second.
+To start on the dimming questions in [#8](https://github.com/H-George-H/dimpsy/issues/8) and [decision 0006](decisions/0006-led-candidate.md) candidate C, add a second, plain warm white light source driven by high-resolution PWM. PWM (pulse-width modulation) dims an LED by switching it on and off thousands of times a second.
 
 | Part | Where to buy | About | Notes |
 | --- | --- | --- | --- |
@@ -162,4 +162,4 @@ Work through these in order and note the results in the pull request or an issue
 
 ## Next steps
 
-The results feed [decision 0006](decisions/0006-led-candidate.md) on candidate A and the open questions in [issue #42](https://github.com/Joe-Heffer/dimpsy/issues/42) (DS3231 and SK6812 support in ESPHome) and [issue #44](https://github.com/Joe-Heffer/dimpsy/issues/44) (working offline). Most of the alpha (charger, breakout, fuse, controls, clock and core tube) carries over to the first prototype unchanged.
+The results feed [decision 0006](decisions/0006-led-candidate.md) on candidate A and the open questions in [issue #42](https://github.com/H-George-H/dimpsy/issues/42) (DS3231 and SK6812 support in ESPHome) and [issue #44](https://github.com/H-George-H/dimpsy/issues/44) (working offline). Most of the alpha (charger, breakout, fuse, controls, clock and core tube) carries over to the first prototype unchanged.

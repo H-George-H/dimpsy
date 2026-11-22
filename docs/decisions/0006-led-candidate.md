@@ -50,7 +50,7 @@ Not yet decided. Open sub-questions:
 
 * Are the separate bench supplies acceptable for the prototype only, or should candidate B be dropped or run from USB-C Power Delivery?
 * Which strip voltage should the first test of candidate C use? One proposal for discussion is 12 V, since it reuses candidate B’s supply and MOSFETs.
-* Does ESPHome’s `cwww` light platform work with two `ledc` outputs at 12-bit or better? This links to [issue #42](https://github.com/Joe-Heffer/dimpsy/issues/42).
+* Does ESPHome’s `cwww` light platform work with two `ledc` outputs at 12-bit or better? This links to [issue #42](https://github.com/H-George-H/dimpsy/issues/42).
 * What do the suppliers say about CRI, output per metre and wiring for the Superlighting strips?
 
 ## Consequences
