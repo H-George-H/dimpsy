@@ -58,6 +58,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+* Alpha bill of materials updated from vendor orders: order status, suppliers, prices and quantities. The KY-040 encoder replaces the Bourns part as the first choice, and a hook-up wire row and a fuse assortment row are added.
 * CI runs the firmware build, core tests and ESPHome validation only when firmware files change, so documentation-only changes skip them.
 * The “Mains and low voltage” section of `docs/hardware-practices.md` is now “Power and safety”. It no longer allows mains work, in line with decision 0003.
 * Decision 0003 now records the power budget, the options considered (including USB-C Power Delivery for 12 V LEDs) and safety practices. Its outcome, USB-C only, is unchanged.
