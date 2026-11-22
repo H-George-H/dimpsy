@@ -72,6 +72,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 * Decision 0006 (still open) now sets out the lighting aims from published research and the supply-voltage trade-offs, and adds tunable-white COB, SK6812 WWA and discrete power LED options.
 * Website, repository and badge links now point to the `H-George-H` GitHub account, including the GitHub Pages address `h-george-h.github.io/dimpsy`.
 
+* Wi-Fi is back on at boot, and the fallback access point “Dimpsy Fallback” uses ESPHome’s default timeout of 90 seconds instead of 30.
+
 ### Removed
 
 * PlatformIO project files, the `pio check` CI job and the firmware binary attached to releases.
