@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./firmware/esphome/secrets.yaml)",
+      "Edit(./firmware/esphome/secrets.yaml)",
+      "Write(./firmware/esphome/secrets.yaml)"
+    ]
+  }
+}
