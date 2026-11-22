@@ -51,3 +51,6 @@ desktop.ini
 
 # Wokwi simulator output
 wokwi-serial.log
+
+# Claude Code local settings
+.claude/settings.local.json
