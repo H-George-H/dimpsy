@@ -6,7 +6,7 @@
 # MkDocs 2 drops plugins, so stay on 1.x.
 mkdocs==1.6.1
 mkdocs-material==9.8.1
-mkdocs-include-markdown-plugin==7.3.0
+mkdocs-include-markdown-plugin==7.3.2
 # The `social` plugin (mkdocs-material[imaging]) generates per-page Open
 # Graph preview cards. CairoSVG renders the SVG logo and Pillow composites
 # the 1200x630 cards.
