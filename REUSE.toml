@@ -9,25 +9,25 @@ version = 1
 [[annotations]]
 path = "firmware/**"
 precedence = "closest"
-SPDX-FileCopyrightText = "2026 Joe Heffer"
+SPDX-FileCopyrightText = "2026 George Hunt"
 SPDX-License-Identifier = "MIT"
 
 [[annotations]]
 path = "hardware/**"
 precedence = "closest"
-SPDX-FileCopyrightText = "2026 Joe Heffer"
+SPDX-FileCopyrightText = "2026 George Hunt"
 SPDX-License-Identifier = "CERN-OHL-P-2.0"
 
 [[annotations]]
 path = "enclosure/**"
 precedence = "closest"
-SPDX-FileCopyrightText = "2026 Joe Heffer"
+SPDX-FileCopyrightText = "2026 George Hunt"
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
 path = "docs/**"
 precedence = "closest"
-SPDX-FileCopyrightText = "2026 Joe Heffer"
+SPDX-FileCopyrightText = "2026 George Hunt"
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
