@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2026 Joe Heffer
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# Configuration for the link checker in .github/workflows/lint.yml.
+
+# These retailers answer automated clients with 403 Forbidden although the
+# pages load in a browser.
+exclude = [
+    '^https://uk\.farnell\.com/',
+    '^https://uk\.rs-online\.com/',
+]
