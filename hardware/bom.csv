@@ -17,7 +17,7 @@ alpha,F1,Inline blade fuse holder with 3 A fuse,Supply input fuse,Amazon or RS,,
 alpha,W1,Wago 221 lever connector,5 V and ground rails,Amazon or Screwfix,,2,,,,to order,
 alpha,C1,1000 µF electrolytic capacitor (10 V or higher),Across the strip power,RS or The Pi Hut,,1,,,,to order,
 alpha,R1,330 Ω resistor,In the strip data line,Elegoo kit,,1,,,Joe Heffer,held,
-alpha,S1,Rotary encoder with push switch,Dimmer knob,The Pi Hut or Amazon,ADA377 or KY-040 module,1,4.40,,,to order,
+alpha,S1,Rotary encoder with push switch (Bourns PEC11R-4215F-S0024),Dimmer knob,Farnell,2474844,1,2.06,https://www.bourns.com/docs/Product-Datasheets/PEC11R.pdf,,to order,24 PPR with 24 detents. 6 mm D-shaft needs a knob. A KY-040 module from Amazon is the alternative
 alpha,S2,30 mm arcade button,Snooze,The Pi Hut,104438,1,2.50,,,to order,
 alpha,S3,Miniature toggle switch (on-off),Alarm on or off,The Pi Hut or Amazon,,1,,,,to order,
 alpha,U2,DS3231 real-time clock,Keeps time without a network,The Pi Hut or Pimoroni,ADA5188,1,13.40,,,to order,Needs a CR1220 coin cell. Avoid ZS-042 modules with a CR2032 unless the charging path is disabled

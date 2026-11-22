@@ -53,7 +53,7 @@ As a rough guide, 30 LEDs on the white channel give a few hundred lumens. That i
 
 ## Parts
 
-Prices are from The Pi Hut on 9 October 2026, including VAT. Stock is patchy, so each line gives an alternative. Parts marked “held” are already owned or come in the Elegoo Mega starter kit.
+Prices are from The Pi Hut on 9 October 2026 and Farnell on 10 October 2026, including VAT. Stock is patchy, so each line gives an alternative. Parts marked “held” are already owned or come in the Elegoo Mega starter kit.
 
 | Ref | Part | Qty | Where to buy | About | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -66,7 +66,7 @@ Prices are from The Pi Hut on 9 October 2026, including VAT. Stock is patchy, so
 | W1 | Wago 221 lever connectors, 3- or 5-way | 2 | Amazon, Screwfix or Toolstation | £5 (pack) | The 5 V and ground rails |
 | C1 | 1000 µF electrolytic capacitor, 10 V or higher | 1 | RS, The Pi Hut or Amazon | £1 | Across the strip’s power wires, to absorb the surge at switch-on. Mind the polarity |
 | R1 | 330 Ω resistor | 1 | Held (Elegoo kit) | | In the strip’s data wire |
-| S1 | Rotary encoder with push switch | 1 | [The Pi Hut ADA377](https://thepihut.com/products/adafruit-rotary-encoder-extras), or a KY-040 encoder module from Amazon | £3–5 | ADA377 was sold out when checked. A KY-040 module also works, powered from 3.3 V |
+| S1 | Rotary encoder with push switch, Bourns PEC11R-4215F-S0024 | 1 | [Farnell 2474844](https://uk.farnell.com/bourns/pec11r-4215f-s0024/incremental-encoder-2ch-24pulse/dp/2474844), or a KY-040 encoder module from Amazon | £2.06 | 24 clicks per turn, one step per click. 6 mm D-shaft, so it needs a knob to match. Its mounting lugs do not fit a breadboard, so solder wires to its pins. A KY-040 module also works, powered from 3.3 V |
 | S2 | 30 mm arcade button | 1 | [The Pi Hut 104438](https://thepihut.com/products/arcade-button-30mm-translucent-clear) | £2.50 | Snooze |
 | S3 | Miniature toggle switch, on-off | 1 | The Pi Hut, Amazon or RS | £1–2 | Alarm on or off |
 | U2 | DS3231 real-time clock (a clock chip with its own battery) | 1 | [The Pi Hut ADA5188](https://thepihut.com/products/adafruit-ds3231-precision-rtc-stemma-qt) or [Pimoroni](https://shop.pimoroni.com/products/adafruit-ds3231-precision-rtc-stemma-qt) | £13.40 | Needs a CR1220 coin cell (£1.90). See the note below on cheap modules |
