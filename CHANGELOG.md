@@ -10,6 +10,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0](https://github.com/H-George-H/dimpsy/compare/v0.1.0...v0.2.0) (2026-11-22)
+
+
+### Features
+
+* **firmware:** add built-in LED control to the web page ([36a9a47](https://github.com/H-George-H/dimpsy/commit/36a9a47ec24d2b6b09f46588233323bf7b29ccbc))
+* **firmware:** add diagnostics, REST API notes and mDNS ([b2b6980](https://github.com/H-George-H/dimpsy/commit/b2b69805ee6eca25023d07bb6b106c5da1800513))
+* **firmware:** add DS3231 clock with network time sync ([2ff2889](https://github.com/H-George-H/dimpsy/commit/2ff28896e63b410d2f3b09fbfe1c41b339dd0cb3))
+* **firmware:** disable Wi-Fi at boot for bare-board testing ([a9e4f06](https://github.com/H-George-H/dimpsy/commit/a9e4f0691474c2f0cd73b0d9ff7d71db3f76b263))
+* **firmware:** enable Wi-Fi at boot with default fallback timeout ([0113eb6](https://github.com/H-George-H/dimpsy/commit/0113eb6aefb0510d0dfef29556686060e119af6c))
+* **firmware:** open captive portal on the fallback access point ([b3c7b0e](https://github.com/H-George-H/dimpsy/commit/b3c7b0e756bb1e0ee0a31c34845e5db88fa476eb))
+
+
+### Bug Fixes
+
+* **ci:** repair firmware build, alpha config and link check ([#108](https://github.com/H-George-H/dimpsy/issues/108)) ([7b57676](https://github.com/H-George-H/dimpsy/commit/7b5767617dc6371bc4a0f7ee4b6a5530705a4170))
+
 ## 0.1.0 (2026-11-22)
 
 
