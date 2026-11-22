@@ -43,4 +43,12 @@ mkdocs serve
 mkdocs build --strict
 ```
 
+The `social` plugin (mkdocs-material[imaging]) generates the per-page Open
+Graph preview cards, which needs the Cairo and Pango native libraries on
+your system. On Debian/Ubuntu:
+
+```sh
+sudo apt-get install -y libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf-2.0-0
+```
+
 Run `mkdocs build --strict` from the repository root before committing changes to this folder. Prose is British English Markdown, with `*` for bullet lists. Every new file needs an SPDX header, as described in [CONTRIBUTING.md](../CONTRIBUTING.md).

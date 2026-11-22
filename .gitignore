@@ -47,6 +47,7 @@ desktop.ini
 
 # Website build output
 /site/
+/.cache/
 
 # Wokwi simulator output
 wokwi-serial.log

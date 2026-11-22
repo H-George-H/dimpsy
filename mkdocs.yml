@@ -60,7 +60,13 @@ extra_css:
 plugins:
   - search:
       lang: en
-  - include-markdown
+  - social:
+      cards: true
+      # Cards match the site palette and logo (theme.logo renders on the card).
+      cards_layout_options:
+        background_color: "#1e1b3a"
+        color: "#f6f1ea"
+        font_family: "Roboto"
 
 hooks:
   - docs/hooks/links.py
