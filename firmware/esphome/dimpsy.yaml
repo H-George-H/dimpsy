@@ -69,3 +69,17 @@ time:
 
 web_server:
   port: 80
+
+# The board's built-in LED, for bare-board testing. Many ESP32 DevKitC boards
+# have it on GPIO2; on boards without one, wire an LED and resistor to GPIO2.
+# The web server above shows it as a switch on the settings page.
+output:
+  - platform: gpio
+    pin: GPIO2
+    id: onboard_led_output
+
+light:
+  - platform: binary
+    name: "Built-in LED"
+    id: onboard_led
+    output: onboard_led_output

@@ -38,6 +38,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 * Working-together and large-file guidance in `CONTRIBUTING.md`.
 * Hardware organisation guidance in `docs/hardware-practices.md` and a prototype bill of materials template in `hardware/bom.csv`.
 * `AGENTS.md` with guidance for AI coding agents.
+* Built-in LED on GPIO2 as a light in the firmware, switchable from the web page.
 * Sanitiser builds of the firmware core under GCC and Clang in CI.
 * Weekly scheduled checks: a firmware build with the latest ESPHome and a full link check.
 * ESPHome pinned in `firmware/esphome/requirements.txt`, with Dependabot upgrades.
