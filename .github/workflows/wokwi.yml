@@ -69,32 +69,16 @@ jobs:
         if: steps.token.outputs.present == 'true'
         working-directory: firmware/esphome
         run: esphome compile dimpsy.yaml
-      - name: Probe build output
+      - name: Run scenarios
         if: steps.token.outputs.present == 'true'
-        working-directory: firmware/esphome
-        run: |
-          ls -l .esphome/build/dimpsy/build/*.bin .esphome/build/dimpsy/build/*.elf || true
-          xxd -l 32 .esphome/build/dimpsy/build/firmware.factory.bin
-          grep -E 'CONFIG_ESP32_REV_MIN|CONFIG_ESPTOOLPY_FLASHSIZE=|CONFIG_ESPTOOLPY_FLASHFREQ=|CONFIG_ESPTOOLPY_FLASHMODE=|CONFIG_ESP_CONSOLE_UART|CONFIG_ESP_CONSOLE_UART_BAUDRATE' .esphome/build/dimpsy/sdkconfig.dimpsy || true
-      - name: Install wokwi-cli
-        if: steps.token.outputs.present == 'true'
-        run: |
-          wget -q -O /usr/local/bin/wokwi-cli https://github.com/wokwi/wokwi-cli/releases/latest/download/wokwi-cli-linuxstatic-x64
-          chmod +x /usr/local/bin/wokwi-cli
-      - name: Probe full diagram
-        if: steps.token.outputs.present == 'true'
-        continue-on-error: true
-        working-directory: firmware/esphome
-        run: wokwi-cli --timeout 40000 --diagram-file diagram.json . 2>&1 | head -c 6000
-      - name: Probe bare ESP32
-        if: steps.token.outputs.present == 'true'
-        continue-on-error: true
-        working-directory: firmware/esphome
-        run: |
-          cat > bare.json <<'JSON'
-          {"version":1,"author":"x","editor":"wokwi","parts":[{"type":"board-esp32-devkit-c-v4","id":"esp32","top":0,"left":0,"attrs":{}}],"connections":[],"dependencies":{}}
-          JSON
-          wokwi-cli --timeout 40000 --diagram-file bare.json . 2>&1 | head -c 6000
+        uses: wokwi/wokwi-ci-action@09e807a07e05b6f2498e43e3fb7ffcf38c277af7 # v1.3.0
+        with:
+          token: ${{ secrets.WOKWI_CLI_TOKEN }}
+          path: firmware/esphome
+          timeout: 60000
+          scenario: scenarios/boot.test.yaml
+          fail_text: "Guru Meditation Error"
+          serial_log_file: wokwi-serial.log
       - name: Show serial log
         if: always() && steps.token.outputs.present == 'true'
         run: |
